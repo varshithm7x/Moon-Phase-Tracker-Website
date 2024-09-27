@@ -175,3 +175,5 @@ function loadMoonPhase() {
             moonPhaseDisplay.innerHTML = '<p>Error loading moon phase.</p>';
         });
 }
+
+
