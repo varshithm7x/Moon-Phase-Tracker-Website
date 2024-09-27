@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+}
+
+#footer-para{
+    position: relative;
+    bottom: 10px;
+}
+/* Moon Phase Animation */
+@keyframes moonPhaseTransition {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+#moon-phase-display {
+    background-image: url('moon-phases.png'); /* Placeholder moon phase sprite */
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin: 0 auto;
+    animation: moonPhaseTransition 5s infinite;
+}
+
+/* styles.css */
+
+/* Add styling for moon phase display */
+#moon-phase-display, #selected-phase {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#calendar-date {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* styles.css */
+
+#moon-phase-image {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#moon-phase-image.show {
+    opacity: 1;
+}
+
+#moon-phase-image.hide {
+    opacity: 0;
+}
+

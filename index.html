@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Phase Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Moon Phase Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#current-phase">Current Moon Phase</a></li>
+                <li><a href="#calendar">Lunar Calendar</a></li>
+                <li><a href="#educational-resources">Educational Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="current-phase">
+        <h2>Current Moon Phase</h2>
+        <div id="moon-phase-display">
+            <!-- Placeholder for moon phase display -->
+            <p>Loading moon phase...</p>
+        </div>
+        <img id="moon-phase-image" src="" alt="Moon Phase" style="display: none; width: 200px; height: 200px;">
+    </section>
+    
+
+    <section id="calendar">
+            <h2>Lunar Calendar</h2>
+            <label for="calendar-date">Select a date:</label>
+            <input type="date" id="calendar-date">
+            <button onclick="getMoonPhaseByDate()">Get Moon Phase</button>
+            <div id="selected-phase">
+                <!-- Display selected moon phase here -->
+                <p>Select a date to view the moon phase.</p>
+            </div>
+    </section>
+
+    <section id="educational-resources">
+        <h2>Educational Resources</h2>
+        <div id="resources">
+            <!-- Placeholder for educational resources -->
+            <p>Learn more about moon phases, astronomy, and more!</p>
+        </div>
+    </section>
+    <section id="moonrise-set">
+        <h2>Moonrise and Moonset Times</h2>
+        <label for="location">Enter your location (latitude, longitude):</label>
+        <input type="text" id="location-lat" placeholder="Latitude">
+        <input type="text" id="location-lon" placeholder="Longitude">
+        <button onclick="getMoonriseSet()">Get Moonrise/Set Times</button>
+        <div id="moonrise-set-times">
+            <!-- Display moonrise and moonset times here -->
+            <p>Enter location to view times.</p>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <p id="footer-para">&copy; 2024 Moon Phase Tracker</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
