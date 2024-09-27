@@ -100,3 +100,25 @@ footer {
     opacity: 0;
 }
 
+/* styles.css */
+
+/* Ensure the moon phase image is centered and scaled properly */
+#moon-phase-image {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    object-fit: contain; /* Ensures the image retains aspect ratio */
+    opacity: 0;  /* Start hidden */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* Add visibility classes for fade-in and fade-out */
+#moon-phase-image.show {
+    opacity: 1;
+}
+
+#moon-phase-image.hide {
+    opacity: 0;
+}
+
