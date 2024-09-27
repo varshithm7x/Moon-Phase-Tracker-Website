@@ -25,6 +25,7 @@
             <p>Loading moon phase...</p>
         </div>
         <img id="moon-phase-image" src="" alt="Moon Phase" style="display: none; width: 200px; height: 200px;">
+
     </section>
 
     <section id="calendar">
@@ -40,15 +41,19 @@
 
     <section id="moonrise-set">
         <h2>Moonrise and Moonset Times</h2>
-        <label for="location">Enter your location (latitude, longitude):</label>
+        <label for="location-lat">Enter Latitude:</label>
         <input type="text" id="location-lat" placeholder="Latitude">
+    
+        <label for="location-lon">Enter Longitude:</label>
         <input type="text" id="location-lon" placeholder="Longitude">
+    
         <button onclick="getMoonriseSet()">Get Moonrise/Set Times</button>
         <div id="moonrise-set-times">
             <!-- Display moonrise and moonset times here -->
             <p>Enter location to view times.</p>
         </div>
     </section>
+    
 
     <section id="educational-resources">
         <h2>Educational Resources</h2>
